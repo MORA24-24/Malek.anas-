@@ -1,55 +1,64 @@
 
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ميدالية أنس</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raider Medal</title>
   <style>
     body {
       margin: 0;
       padding: 0;
+      overflow: hidden;
+    }
+    .background {
       background-image: url('background.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       height: 100vh;
-      font-family: sans-serif;
-    }
-
-    .container {
+      width: 100vw;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      height: 100vh;
-      padding-bottom: 40px;
-      box-sizing: border-box;
+      position: relative;
     }
-
-    .insta-button {
-      background-color: #E1306C;
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
       color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 18px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-family: sans-serif;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: background 0.3s;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      position: absolute;
+      bottom: 80px;
+      width: 100%;
     }
-
-    .insta-button:hover {
-      background-color: #c72e61;
+    .insta-btn {
+      background-color: #e1306c;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      position: absolute;
+      bottom: 20px;
+    }
+    .insta-btn:hover {
+      background-color: #c5285c;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <a class="insta-button" href="https://www.instagram.com/ano0os.98" target="_blank">
-      تابعني على إنستغرام
-    </a>
+  <div class="background">
+    <div class="overlay">
+      رايد الحياة على طريقتي <br>
+      دي الميدالية الخاصة بيا... لو وصلت ليها، يبقى إحنا على نفس الطريق 🏍️<br>
+      ano0os.98
+    </div>
+    <a class="insta-btn" href="https://www.instagram.com/ano0os.98" target="_blank">تابعني على إنستجرام</a>
   </div>
 </body>
 </html>
